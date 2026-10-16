@@ -1,0 +1,27 @@
+--cpu=Cortex-M4.fp.sp
+"hsy_pid\startup_stm32f407xx.o"
+"hsy_pid\speed_pid.o"
+"hsy_pid\main.o"
+"hsy_pid\stm32f4xx_it.o"
+"hsy_pid\stm32f4xx_hal_msp.o"
+"hsy_pid\motor.o"
+"hsy_pid\stm32f4xx_hal_tim.o"
+"hsy_pid\stm32f4xx_hal_tim_ex.o"
+"hsy_pid\stm32f4xx_hal_rcc.o"
+"hsy_pid\stm32f4xx_hal_rcc_ex.o"
+"hsy_pid\stm32f4xx_hal_flash.o"
+"hsy_pid\stm32f4xx_hal_flash_ex.o"
+"hsy_pid\stm32f4xx_hal_flash_ramfunc.o"
+"hsy_pid\stm32f4xx_hal_gpio.o"
+"hsy_pid\stm32f4xx_hal_dma_ex.o"
+"hsy_pid\stm32f4xx_hal_dma.o"
+"hsy_pid\stm32f4xx_hal_pwr.o"
+"hsy_pid\stm32f4xx_hal_pwr_ex.o"
+"hsy_pid\stm32f4xx_hal_cortex.o"
+"hsy_pid\stm32f4xx_hal.o"
+"hsy_pid\stm32f4xx_hal_exti.o"
+"hsy_pid\system_stm32f4xx.o"
+--strict --scatter "hsy_pid\hsy_pid.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "hsy_pid.map" -o hsy_pid\hsy_pid.axf
